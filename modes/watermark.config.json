@@ -42,8 +42,8 @@
     "value": " for XXX"
   },
   "logo": {
-    "enabled": false,
-    "display": "block",
+    "enabled": true,
+    "display": "none",
     "src": {
       "#333": "logo/logo-black.png",
       "#fff": "logo/logo-white.png"
