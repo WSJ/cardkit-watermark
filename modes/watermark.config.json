@@ -22,6 +22,7 @@
     "Black": "#333",
     "White": "#fff"
   },
+  "defaultColor": "#333",
   "shadow": {
     "#333": "#fff",
     "#fff": "#333"
