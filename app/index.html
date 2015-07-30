@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>CardKit Watermark</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="description" content="Crop and add photo credit to images for sharing on social media.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- Fonts (optional) -->
+
+  </head>
+
+  <body ng-app="cardkitApp">
+    <header id="header" class="top-header">
+        <a class="logo" href="dowjones.github.io/cardkit-watermark" title="CardKit Watermark demo"></a>
+        <span class="text">Watermark</span>
+        <nav id="nav">
+            <ul>
+                <!--<li class="link"><a class="button" ui-sref="example">Example</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="body" class="container-wide">
+        <div ui-view class="row"></div>
+    </main>
+
+    <footer id="footer">
+        <p class="version">CardKit Watermark v0.9.0 <a href="http://www.github.com/dowjones/cardkit-watermark"></a></p>
+        <p class="credits"><a href="http://www.github.com/dowjones/cardkit-watermark">Source available on GitHub</a> | Created by <a href="https://github.com/sarahjsquire">Sarah Squire</a> for <a href="https://twitter.com/wsjgraphics">The Wall Street Journal</a> | Built on top of <a href="http://www.github.com/times/cardkit">CardKit</a> by <a href="https://github.com/chrishutchinson">Chris Hutchinson</a> for <a href="https://medium.com/digital-times">The Times and Sunday Times Digital Team</a></p>
+    </footer>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/snap.svg/dist/snap.svg-min.js"></script>
+    <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
+    <script src="bower_components/angular-draganddrop/angular-draganddrop.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <script src="bower_components/saveSvgAsPng/saveSvgAsPng.js"></script>
+    <script src="bower_components/jsjpegmeta/jpegmeta.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/watermark.js"></script>
+    <script src="scripts/services/snapsvg.js"></script>
+    <script src="scripts/directives/snapsvg.js"></script>
+    <script src="scripts/services/savesvgaspng.js"></script>
+    <script src="scripts/services/themeconfigprovider.js"></script>
+    <script src="scripts/directives/imageeditor.js"></script>
+    <script src="scripts/services/jsjpegmeta.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

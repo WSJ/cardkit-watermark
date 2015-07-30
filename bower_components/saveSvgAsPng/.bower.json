@@ -1,0 +1,13 @@
+{
+  "name": "saveSvgAsPng",
+  "homepage": "https://github.com/exupero/saveSvgAsPng",
+  "_release": "076f50006d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "gh-pages",
+    "commit": "076f50006d2d3036b2f9943c1075a5f71ebdbd53"
+  },
+  "_source": "git://github.com/exupero/saveSvgAsPng.git",
+  "_target": "gh-pages",
+  "_originalSource": "exupero/saveSvgAsPng"
+}

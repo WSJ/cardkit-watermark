@@ -1,0 +1,34 @@
+$light-blue:#0080c3;
+$red:#cc0b24;
+$light-grey-background:#f3f3f3;
+$light-grey-text:#999999;
+$dark-grey:#666666;
+$black: #333;
+
+$green:	#228B22;
+
+/* - Font variables - */
+$body-font: Helvetica,Arial,sans-serif;
+$body-weight:400;
+$body-size:14px;
+
+$font-family: 		$body-font;
+$font-size: 		14px;
+
+$primary-color: 	$light-blue;
+$secondary-color: 	#384e87;
+$color: 			$black;
+$border-color: 		#ccc;
+$success-color: 	#8cce67;
+$danger-color: 		$red;
+
+
+/** Header **/
+$header-background-color: 		#111;
+$header-color: 					#FFFFFF;
+
+/** Nav **/
+$nav-button-background-color: 	$header-background-color;
+$nav-button-color: 	#ddd;
+
+$footer-height: 70px;

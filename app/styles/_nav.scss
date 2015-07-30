@@ -1,0 +1,69 @@
+#nav {
+	height: 100%;
+	position: absolute;
+	display: inline-block;
+	right: 15px;
+	top: 0px;
+
+	ul {
+		@include inline-list;
+		height: 100%;
+
+		li {
+			margin: 0 10px 0 0;
+			height: 100%;
+			float: left;
+			line-height: 1.8;
+
+			&.link {
+				a {
+					@include button($nav-button-background-color, $nav-button-color);
+					height: 100%;
+					background-color: inherit;
+					display: inline-block;
+					padding-top: 13px;
+					letter-spacing: 1px;
+					&:visited, &:link {
+						//color: $nav-button-color;
+						background-color: inherit;
+						text-decoration: none;
+					}
+					&:active, &:focus {
+						background-color: inherit;
+						text-decoration: none;
+					}
+				}
+				&:hover {
+					color: #fff;
+					background-color: #333;
+				}
+				&.active {
+					color: #fff;
+					background-color: #333;
+				}
+			}
+
+			&.text {
+				font-size: 1.2em;
+				font-weight: 300;
+			}
+
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 828px) {
+		// float: none;
+		// padding: 0;
+		position: relative;
+		display: block;
+		clear: left;
+		height: 35px;
+
+		ul li.link a {
+			padding-top: 5px;
+		}
+	}
+}

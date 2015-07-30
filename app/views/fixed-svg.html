@@ -1,0 +1,29 @@
+  <!-- SVG element -->
+  <div class="svg" fixed-scroll>
+
+    <div class="svg-wrapper" ng-if="((config.themes.length > 0 && theme) || !config.themes) && ((config.sizes.length > 0 && size) || !config.sizes)">
+      <snap-svg svg-config="config.svg" svg-theme="config.theme" filters="filters"></snap-svg>
+      <button class="button" ng-click="downloadSvg()"><i class="fa fa-save"></i> Download Image</button>
+    </div>
+
+    <div class="config-wrapper">
+      <div class="panel" ng-show="config.sizes">
+        <h3 ng-click="dimensions = !dimensions"><i class="fa fa-caret-down" ng-hide="dimensions"></i><i class="fa fa-caret-right" ng-hide="!dimensions"></i> Dimensions <small>Choose your image output size</small></h3>
+        <select id="size" ng-model="size" ng-options="size.name for size in config.sizes" ng-init="size = config.sizes[0]" class="form-control" ng-hide="dimensions">
+          <option value="">-- Choose size --</option>
+        </select>
+      </div>
+
+      <div class="panel" ng-show="config.themes">
+        <h3 ng-click="themes = !themes"><i class="fa fa-caret-down" ng-hide="themes"></i><i class="fa fa-caret-right" ng-hide="!themes"></i> Theme <small>Choose the look and feel</small></h3>
+        <select id="theme" ng-model="theme" ng-options="theme.name for theme in config.themes" ng-init="theme = config.themes[0]" class="form-control" ng-hide="themes">
+          <option value="">-- Choose theme --</option>
+        </select>
+      </div>
+
+      <div class="panel" ng-show="config.output.editable.scale">
+        <h3 ng-click="scale = !scale"><i class="fa fa-caret-down" ng-hide="scale"></i><i class="fa fa-caret-right" ng-hide="!scale"></i> Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
+        <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+      </div>
+    </div>
+  </div>

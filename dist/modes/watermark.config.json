@@ -1,0 +1,56 @@
+[{
+	"name": "watermark",
+  "sizes": [
+    {
+      "name": "Social",
+      "width": 600,
+      "height": 300
+    },
+    {
+      "name": "Square",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "name": "Custom",
+      "width": 600,
+      "height": 320,
+      "locked": true
+    }
+  ],
+  "colors": {
+    "Black": "#333",
+    "White": "#fff"
+  },
+  "defaultColor": "#333",
+  "shadow": {
+    "#333": "#fff",
+    "#fff": "#333"
+  },
+  "margin": 20,
+
+	"fontFamily": "Helvetica",
+  "fontWeight": 500,
+  "fontStyle": "regular",
+  "fontSize": 12,
+  "uppercase": false,
+  "opacity": ".9",
+  "maxWidth": 1274,
+  "defaultText": "Credit",
+  "helpText": "",
+  "suffix": {
+    "enabled": false,
+    "value": " for XXX"
+  },
+  "logo": {
+    "enabled": true,
+    "display": "none",
+    "src": {
+      "#333": "logo/logo-black.png",
+      "#fff": "logo/logo-white.png"
+    },
+    "width": 99,
+    "height": 25,
+    "opacity": ".8"
+  }
+}]

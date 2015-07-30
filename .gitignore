@@ -1,0 +1,8 @@
+node_modules
+.tmp
+.sass-cache
+bower_components/*
+.DS_Store
+
+!bower_components/saveSvgAsPng
+!bower_components/jsjpegmeta

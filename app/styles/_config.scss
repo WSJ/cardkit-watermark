@@ -1,0 +1,38 @@
+div.config-wrapper {
+	margin-top: 20px;
+	overflow: auto;
+	h3 {
+		text-transform: uppercase;
+		font-weight: 300;
+		margin: 0 0 5px;
+		font-size: 1.2em;
+		//cursor: pointer;
+		user-select: none;
+
+		small {
+			color: $secondary-color;
+			text-transform: initial;
+		}
+	}
+
+	.panel {
+		margin-bottom: 20px;
+		padding: 10px 0 20px;
+		border-bottom: 1px solid lighten($border-color, 10%);
+
+		&:last-of-type {
+			border-bottom: 0px;
+		}
+	}
+
+	.form-inline .form-control {
+		vertical-align: baseline;
+	}
+	label {
+		font-weight: normal;
+	}
+}
+
+input, select, textarea {
+	min-height: 0;
+}
